@@ -1,5 +1,57 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* mobile first and main theme is dark */
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  inline-size: 375px; /*!!change */
+  background-image: url(../images/cover-image-dark.png);
+  object-fit: fill;
+  object-position: center;
+  background-attachment: fixed;
+  font-family: 'IBM Plex mono', sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header__bulb::before {
+  /* TODO: a11l */
+  content: 'REC';
+  color: var(--main-color);
+}
+
+.header__bulb::after {
+  /* TODO: a11l */
+  content: '';
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  box-shadow: 4px 4px 4px 4px 0 var(--main-color);
+}
+
+.header__theme-menu {
+  color: var(--main-color);
+
+}
+
+.header__title {
+  color: #DB00FF;
+  font-size: 116px;
+  line-height: 82.5%;
+  font-weight: bold;
+  text-shadow: 4px 4px 0 var(--main-color);
+}
+
+.title-decore {
+  background-color: var(--main-color);
+}
+
+.header__epigraph {
+  background-color: var(--main-color);
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: bold;
+  color: var(--accent-color);
 }

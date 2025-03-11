@@ -2,13 +2,16 @@
 
 /* mobile first and main theme is dark */
 .page {
+  /* TODO fix image */
   background-image: var(--dark-background);
-  object-fit: cover;
-  object-position: center;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   font-family: 'IBM Plex mono', sans-serif;
+  font-size: 18px;
 }
 
+/* HEADER */
 .header {
   padding: 10px;
   display: grid;
@@ -36,20 +39,21 @@
   
 }
 
-.header__bulb {
-  /* TODO: a11l */
+.header__bulb::before {
+  content: "REC";
   position: absolute;
-  left: 304px;
+  right: 38px;
   top: 10px;
-  font-size: 18px;
   line-height: 25px;
   color: var(--main-color);
   text-align: center;
 }
 
 .header__bulb::after {
-  /* TODO: a11l */
   content: "";
+  position: absolute;
+  right: 18px;
+  top: 18px;
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
@@ -60,24 +64,40 @@
 .header__theme-menu {
   color: var(--main-color);
   justify-self: end;
+  margin-block-end: 65px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  background-color: transparent;
+  line-height: 18px;
+  text-transform: lowercase;
+  margin-block-end: 10px;
+}
+
+.header__theme-menu-button:last-child {
+  margin-block-end: none;
 }
 
 .header__title {
   color: #DB00FF;
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   font-weight: bold;
   text-shadow: 4px 4px 0 var(--main-color);
+  margin-block-end: 55px;
 }
 
-.title-decore {
+.title-decor {
   background-color: var(--main-color);
 }
 
 .header__epigraph {
   background-color: var(--main-color);
-  font-size: 18px;
   line-height: 23.4px;
   font-weight: bold;
   color: var(--accent-color);
+  margin-block-end: 31px;
 }
+
+/* MAIN */

@@ -42,11 +42,11 @@
 .header__bulb::before {
   content: "REC";
   position: absolute;
-  right: 38px;
-  top: 10px;
   line-height: 25px;
   color: var(--main-color);
   text-align: center;
+  right: 38px;
+  top: 10px;
 }
 
 .header__bulb::after {
@@ -105,6 +105,12 @@
   background-color: var(--main-color);
 }
 
+.epigraph-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-block-end: 31px;
+}
+
 .header__epigraph {
   background-color: var(--main-color);
   line-height: 23.4px;
@@ -112,68 +118,60 @@
   color: var(--accent-color);
 }
 
-.header__epigraph:last-child {
-  margin-block-end: 31px;
-}
-
 /* MAIN */
 .hero {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 10px;
+  gap: 50px;
 }
 
 .hero__articles {
   font-weight: 700;
   line-height: 23.4px;
   font-size: 18px;
-  margin-block-end: 50px;
 }
 
 .hero__title{
   line-height: inherit;
   font-size: inherit;
   color: var(--main-color);
-  margin-block-end: 20px;
 }
 
-.hero__subtitle {
+/* rules for articles, 
+specific will be later */
+.article__title {
   line-height: inherit;
   font-size: inherit;
   color: var(--accent-color);
   margin-block-end: 10px;
 }
 
-.hero__subtitle-acsent {
-  margin-block-end: 20px;
-}
-
-.hero__text {
-  font-weight: 400;
-  color: var(--text-color);
-  margin-block-end: 20px;
-}
-
-.hero__text:last-child {
+.article__title-acsent {
   margin-block-end: 0;
 }
 
-.hero__text-link {
+.article__text {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.article__text-link {
   text-shadow: 2px 2px 0 var(--main-color);
 }
 
-.hero__text-link:hover {
+.article__text-link:hover {
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 2px;
   /* TODO turn off underline shadow with shecodes */
 }
 
-.hero__text-link:focus   {
+.article__text-link:focus   {
   outline-style: 1px solid var(--text-color);
 }
 
-.hero__subtitle-sub {
+.article__subtitle {
   line-height: inherit;
   font-size: inherit;
   font-weight: 400;
@@ -181,6 +179,26 @@
   margin-block-end: 10px;
 }
 
+/* specific articl rules */
+.hero__why {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.hero__what {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.hero__how {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* gallery rules */
 .hero__gallery {
   display: grid;
   grid-template-columns: 1fr;
@@ -212,4 +230,73 @@
   text-shadow: 2px 2px 0 var(--main-color);
   margin-block-end: 55px;
   padding: 214px 0 195px 0;
+  text-align: center;
 }
+
+@media (768px <= width < 1024px){
+  
+  .header {
+    padding: 20px;
+    margin-block-end: 60px;
+  }
+
+  .header__bulb::before {
+    right: 51px;
+    top: 20px;
+  }
+
+  .header__bulb::after {
+    right: 28px;
+    top: 27px;
+  }
+
+  .decorated-zone::before {
+    margin-block-end: 147px;
+  }
+
+  .header__theme-menu {
+    margin-block-end: 173px;
+  }
+
+  .header__title {
+    margin-block-end: 162px;
+    margin-left: -22px;
+  }
+
+  .epigraph-wrapper {
+    grid-template-columns: 1fr 1fr;
+    margin-block-end: 138px;
+  }
+
+  .header__epigraph {
+    grid-column: 2;
+  }
+
+  .hero {
+    gap: 80px;
+  }
+
+  .hero__why {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+
+  .hero__why-title {
+    grid-column: 1;
+    margin-block-end: 0;
+  }
+
+  .why-article-many{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .why-article-dof {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+@media (1024px <= width){}

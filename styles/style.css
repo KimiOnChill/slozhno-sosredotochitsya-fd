@@ -124,6 +124,7 @@
   grid-template-columns: 1fr;
   padding: 0 10px;
   gap: 50px;
+  margin-block-end: 40px;
 }
 
 .hero__articles {
@@ -202,17 +203,16 @@ specific will be later */
 .hero__gallery {
   display: grid;
   grid-template-columns: 1fr;
-  margin-block-end: 40px;
+  gap: 10px
+}
+
+.article__title-gallery {
+  margin-block-end: 0;
 }
 
 .gallery__image {
   inline-size: 100%;
   object-fit: cover; 
-  margin-block-end: 10px;
-}
-
-.gallery__image:last-child {
-  margin-block-end: 0;
 }
 
 /* FOOTER */
@@ -237,16 +237,16 @@ specific will be later */
   
   .header {
     padding: 20px;
-    margin-block-end: 60px;
+    margin-block-end: 67px;
   }
 
   .header__bulb::before {
-    right: 51px;
+    right: 49px;
     top: 20px;
   }
 
   .header__bulb::after {
-    right: 28px;
+    right: 29px;
     top: 27px;
   }
 
@@ -255,12 +255,12 @@ specific will be later */
   }
 
   .header__theme-menu {
-    margin-block-end: 173px;
+    margin-block-end: 180px;
   }
 
   .header__title {
-    margin-block-end: 162px;
-    margin-left: -22px;
+    margin-block-end: 160px;
+    margin-left: -20px;
   }
 
   .epigraph-wrapper {
@@ -274,6 +274,8 @@ specific will be later */
 
   .hero {
     gap: 80px;
+    padding: 0 20px;
+    margin-block-end: 52px;
   }
 
   .hero__why {
@@ -296,6 +298,83 @@ specific will be later */
   .why-article-dof {
     grid-column: 2;
     grid-row: 2;
+  }
+
+  .hero__what-title {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .hero__how {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 20px;
+  }
+
+  .hero__how-title {
+    grid-row: 1 / 3;
+  }
+
+  .how-article-music {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .how-article-walk {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .how-article-eat {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  .how-article-read {
+    grid-column: 2;
+    grid-row: 6;
+  }
+
+  .hero__gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+  }
+
+  .article__title-gallery {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  .gallery__image-sunset {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .gallery__image-ice-cream {
+    grid-area: 2 / 3 / 4 / 4;
+    block-size: 100%;
+  }
+
+  .gallery__image-tape {
+    grid-area: 3 / 1 / 5 / 2;
+    block-size: 100%;
+  }
+
+  .gallery__image-books {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .gallery__image-street {
+    grid-area: 4 / 2 / 5 / 4;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+  
+  .footer__title {
+    padding: 271px 0 361px 0;
   }
 }
 

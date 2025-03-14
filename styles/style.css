@@ -356,15 +356,15 @@ specific will be later */
   }
 
   .decorated-zone::before {
-    margin-block-end: 147px;
+    margin-block-end: 146px;
   }
 
   .header__theme-menu {
-    margin-block-end: 180px;
+    margin-block-end: 175px;
   }
 
   .header__title {
-    margin-block-end: 160px;
+    margin-block-end: 162px;
   }
 
   .epigraph-wrapper {
@@ -408,17 +408,17 @@ specific will be later */
     grid-row: 1;
     grid-column: 1;
     margin-inline-end: 0;
-    margin-block-end: 276px;
+    margin-block-end: 275px;
   }
 
   .header__theme-menu-list {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
-    gap: 23px;
+    gap: 10px;
   }
 
   .header__title {
-    margin-block-end: 115px;
+    margin-block-end: 113px;
   }
   
   .epigraph-wrapper {

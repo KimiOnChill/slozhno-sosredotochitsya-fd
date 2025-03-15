@@ -14,8 +14,8 @@
   --heading-color:#000028;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
-  
   --background: url(../images/cover-image-dark.png);
+  --background-color: #000028;
 }
 
 .theme-dark .header__bulb::before {

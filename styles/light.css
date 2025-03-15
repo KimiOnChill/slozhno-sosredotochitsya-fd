@@ -15,6 +15,7 @@
   --text-color: #353430;
   --accent-color: #FF8DCB;
   --background: url(../images/cover-image-light.png);
+  --background-color: #FFF1F7;
 }
 
 .theme-light .header__bulb::before {
@@ -40,6 +41,7 @@
     --heading-color:#353430;
     --text-color: #353430;
     --accent-color: #FF8DCB;
-    --background: url(../images/cover-image-light.png);    
+    --background: url(../images/cover-image-light.png);
+    --background-color: #FFF1F7;
   }
 }

@@ -361,24 +361,35 @@ specific will be later */
 
 @media (768px <= width < 1024px) {
 
+  .header {
+    grid-template-rows: repeat(5, auto);
+    padding-block-end: 0;
+    margin-block-end: 15px;
+  }
+
   .decorated-zone::before {
-    margin-block-end: 146px;
+    margin-block-end: 0;
   }
 
   .header__theme-menu {
-    margin-block-end: 175px;
+    margin-block-start: 28px;
+    margin-block-end: 0;
   }
 
   .header__title {
-    margin-block-end: 162px;
+    margin-block-end: 45px;
+    align-self: center;
   }
 
   .epigraph-wrapper {
-    margin-block-end: 68px;
+    margin-block-end: 19px;
+    gap: 0;
+    align-self: center;
   }
 
-  .header__epigraph {
-    grid-column: 2;
+  .decorated-zone::after {
+    align-self: center;
+    margin-block-end: 16px;
   }
 
   .hero {
@@ -390,9 +401,13 @@ specific will be later */
     grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
+
+  .footer {
+    padding-block-end: 0;
+  }
   
   .footer__title {
-    padding: 271px 0 361px 0;
+    padding: 299px 0 182px 0;
   }
 }
 

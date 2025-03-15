@@ -117,7 +117,7 @@
 .hero__title {
   line-height: inherit;
   font-size: inherit;
-  color: var(--heading-color);
+  color: var(--article-heading-color);
 }
 
 /* rules for articles, 

@@ -11,7 +11,8 @@
   */
   --main-color: #353430;
   --title-color: #FFC2E6;
-  --heading-color:#353430;
+  --article-heading-color: #353430;
+  --heading-color: #353430;
   --text-color: #353430;
   --accent-color: #FF8DCB;
   --background: url(../images/cover-image-light.png);
@@ -38,6 +39,7 @@
   :root {
     --main-color: #353430;
     --title-color: #FFC2E6;
+    --article-heading-color: #353430;
     --heading-color:#353430;
     --text-color: #353430;
     --accent-color: #FF8DCB;

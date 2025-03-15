@@ -19,6 +19,7 @@
   display: grid;
   grid-template-columns: 1fr;
   margin-block-end: 39px;
+  position: relative;
 }
 
 .decorated-zone::before {
@@ -373,8 +374,7 @@ specific will be later */
   }
 
   .epigraph-wrapper {
-    grid-template-columns: 1fr 1fr;
-    margin-block-end: 138px;
+    margin-block-end: 68px;
   }
 
   .header__epigraph {

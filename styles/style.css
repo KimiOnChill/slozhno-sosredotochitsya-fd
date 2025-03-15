@@ -30,6 +30,8 @@
   border-block-start: 1px solid var(--main-color);
   margin-block-end: 39px;
   justify-self: end;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .decorated-zone::after {
@@ -39,7 +41,33 @@
   background-color: transparent;
   border-inline-start: 1px solid var(--main-color);
   border-block-end: 1px solid var(--main-color);
-  
+}
+
+.header__bulb {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.header__bulb::before {
+  content: "REC";
+  position: absolute;
+  line-height: 25px;
+  color: var(--main-color);
+  text-align: center;
+  right: 38px;
+  top: 10px;
+}
+
+.header__bulb::after {
+  content: "";
+  position: absolute;
+  right: 19px;
+  top: 18px;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background: var(--main-color);
+  box-shadow: 0px 0px 4px 2px var(--main-color);
 }
 
 .header__theme-menu {
@@ -71,6 +99,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: 1px solid var(--main-color);
 }
 
 .header__title {
@@ -220,6 +249,17 @@ specific will be later */
 
   .header {
     padding: 20px;
+    margin-block-end: 142px;
+  }
+
+  .header__bulb::before {
+    right: 49px;
+    top: 20px;
+  }
+
+  .header__bulb::after {
+    right: 29px;
+    top: 27px;
   }
 
   .header__title {
@@ -319,10 +359,6 @@ specific will be later */
 }
 
 @media (768px <= width < 1024px) {
-  
-  .header {
-    margin-block-end: 67px;
-  }
 
   .decorated-zone::before {
     margin-block-end: 146px;

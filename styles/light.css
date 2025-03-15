@@ -19,16 +19,16 @@
   --background-color: #FFF1F7;
 }
 
-.theme-light .header__bulb::before {
+/* .theme-light .header__bulb::before {
   display: none;
 }
 
 .theme-light .header__bulb::after {
   display: none;
-}
+} */
 
-.theme-light .header__theme-menu-button_type_light {
-  outline: 1px solid var(--main-color);
+.theme-light .header__bulb {
+  display: none;
 }
 
 .theme-light .header__theme-menu-button:hover {

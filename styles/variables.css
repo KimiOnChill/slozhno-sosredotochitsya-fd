@@ -5,9 +5,10 @@
 :root {
   --main-color: #FF0070;
   --title-color: #DB00FF;
+  --article-heading-color: #FF0070;
   --heading-color:#000028;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
-  
   --background: url(../images/cover-image-dark.png);
+  --background-color: #000028;
 }

@@ -364,32 +364,35 @@ specific will be later */
   .header {
     grid-template-rows: repeat(5, auto);
     padding-block-end: 0;
-    margin-block-end: 15px;
+    margin-block-end: 68px;
   }
 
   .decorated-zone::before {
-    margin-block-end: 0;
+    margin-block-end: 27px;
   }
 
   .header__theme-menu {
-    margin-block-start: 28px;
     margin-block-end: 0;
   }
 
   .header__title {
-    margin-block-end: 45px;
+    margin-block-end: 23px;
     align-self: center;
   }
 
   .epigraph-wrapper {
-    margin-block-end: 19px;
+    margin-block-end: 0;
     gap: 0;
     align-self: center;
+    position: relative;
+    top: 20px;
   }
 
   .decorated-zone::after {
     align-self: center;
-    margin-block-end: 16px;
+    margin-block-end: 0;
+    position: relative;
+    top: 38px;
   }
 
   .hero {
@@ -407,7 +410,7 @@ specific will be later */
   }
   
   .footer__title {
-    padding: 299px 0 182px 0;
+    padding: 267px 0 139px 0;
   }
 }
 

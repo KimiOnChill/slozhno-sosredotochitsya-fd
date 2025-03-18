@@ -15,10 +15,8 @@
   --heading-color:#000028;
   --text-color: #F1B2CE;
   --accent-color: #FF0070;
+  --hover-color: hsla(334, 100%, 50%, 40%);
   --background: url(../images/cover-image-dark.png);
   --background-color: #000028;
-}
-
-.theme-dark .header__theme-menu-button:hover {
-  border: 1px solid hsla(334, 100%, 50%, 40%);
+  --display: inline-block;
 }

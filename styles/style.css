@@ -164,6 +164,12 @@
 }
 
 /* rules for cards*/
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .section__card {
   display: flex;
   flex-direction: column;
@@ -244,13 +250,12 @@
 @media (width >= 768px) {
 
   .page {
-    gap: 52px;
+    gap: 60px;
   }
 
   .header {
     padding: 20px;
     grid-template-rows: 17.3% 27.7% 26.5% auto;
-    margin-block-end: 16px;
   }
 
   .decorated-zone::after {
@@ -293,7 +298,6 @@
   .hero__section-why {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* grid-template-rows: auto auto; */
     gap: 20px;
   }
 
@@ -304,9 +308,6 @@
 
   .card-wrapper-why {
     grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
   }
 
   .section__title-what {
@@ -374,7 +375,6 @@
 
   .header {
     grid-template-rows: 41.2% 33.3% auto;
-    margin-block-end: 0;
   }
 
   .decorated-zone::before {
